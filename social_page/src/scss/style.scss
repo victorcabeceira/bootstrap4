@@ -1,0 +1,13 @@
+$bg-color-dg:#333;
+$font-color-w:#fff;
+$primary-color-b:#01AAC1;
+
+body{
+  background: $bg-color-dg;
+  color:$font-color-w;
+}
+
+.navbar{
+  border-bottom:$primary-color-b 3px solid;
+  opacity: 0.8;
+}
