@@ -2,7 +2,7 @@ $bg-color-dg:#333;
 $font-color-w:#fff;
 $primary-color-b:#01AAC1;
 $dark-overlay: rgba(0,0,0,0.7);
-$font-size:30px;
+$icon-size:30px;
 
 body{
   background: $bg-color-dg;
@@ -41,9 +41,19 @@ body{
 
   .fa{
     color:$primary-color-b;
-    background:#fff;
+    background:#fontfff;
     padding:4px;
     border-radius:5px;
-    font-size:$font-size;
+    icon-size:$icon-size;
+  }
+}
+
+#explore-section{
+  .fa{
+    color:#fff;
+    background:#333;
+    padding:4px;
+    border-radius:5px;
+    icon-size:$icon-size;
   }
 }
