@@ -1,0 +1,83 @@
+$bg-color-dg:#333;
+$font-color-w:#fff;
+$primary-color-b:#01AAC1;
+$dark-overlay: rgba(0,0,0,0.8);
+$icon-size:30px;
+
+body{
+  background: $bg-color-dg;
+  color:$font-color-w;
+}
+
+.navbar{
+  border-bottom:$primary-color-b 3px solid;
+  opacity: 0.8;
+}
+#home{
+  .nav-pull-right{
+    float:right;
+  }
+}
+#home-section{
+  background:url('../img/home.jpg') no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  min-height:700px;
+  max-height: 100%;
+  max-width: 100%;
+
+  .dark-overlay{
+    background-color: $dark-overlay;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height: 700px;
+  }
+
+  .home-inner{
+    padding-top:150px;
+  }
+
+  .card-form{
+    opacity:0.9;
+  }
+
+  .fa{
+    color:$primary-color-b;
+    background:#fff;
+    padding:4px;
+    border-radius:5px;
+    icon-size:$icon-size;
+  }
+}
+
+#explore-section{
+  .fa{
+    color:#fff;
+    background:#333;
+    padding:4px;
+    border-radius:5px;
+    icon-size:$icon-size;
+  }
+}
+
+#create-section{
+  .fa{
+    color:$bg-color-dg;
+    background:#fff;
+    padding:4px;
+    border-radius:5px;
+    icon-size:$icon-size;
+  }
+}
+
+#share-section{
+  .fa{
+    color:#fff;
+    background:#333;
+    padding:4px;
+    border-radius:5px;
+    icon-size:$icon-size;
+  }
+}
