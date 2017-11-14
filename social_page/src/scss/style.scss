@@ -41,7 +41,7 @@ body{
 
   .fa{
     color:$primary-color-b;
-    background:#fontfff;
+    background:#fff;
     padding:4px;
     border-radius:5px;
     icon-size:$icon-size;
@@ -52,6 +52,16 @@ body{
   .fa{
     color:#fff;
     background:#333;
+    padding:4px;
+    border-radius:5px;
+    icon-size:$icon-size;
+  }
+}
+
+#create-section{
+  .fa{
+    color:$bg-color-dg;
+    background:#fff;
     padding:4px;
     border-radius:5px;
     icon-size:$icon-size;
