@@ -1,5 +1,6 @@
 $primary-color: #432C51;
 $primary-overlay-color:rgba(83, 84, 116, 0.8);
+$medium-gray-color:#535474;
 // #535474, #54A4AF,#ECBC55 (gray, turquoise, yellow)
 body{
   margin-top: 105px;
@@ -35,9 +36,15 @@ body{
 }
 
 .bg-primary{
-  color:#535474;
+  color:$medium-gray-color;
 }
 
 .text-muted-2{
   color:#E2DCD5;
+}
+
+.info-header{
+  width:50%;
+  margin:auto;
+  border-bottom:1px $medium-gray-color solid;
 }
