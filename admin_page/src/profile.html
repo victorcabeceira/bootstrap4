@@ -59,7 +59,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1> Post title</h1>
+          <h1><i class="fa fa-user-o"></i> Edit Profile</h1>
         </div>
         <div class="col-md-6"></div>
       </div>
@@ -76,56 +76,52 @@
           </a>
         </div>
         <div class="col-md-3">
-          <a href="index.html" class="btn btn-success btn-block">
-            <i class="fa fa-check"></i> Save  changes
+          <a href="index.html" class="btn btn-success btn-block" data-toggle="modal" data-target="#changePwModal">
+            <i class="fa fa-lock"></i> Change Password
           </a>
         </div>
         <div class="col-md-3">
           <a href="index.html" class="btn btn-danger btn-block">
-            <i class="fa fa-remove"></i> Delete post
+            <i class="fa fa-remove"></i> Delete Account
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- POSTS -->
-  <section id="posts">
+  <!-- PROFILE EDIT -->
+  <section id="profile">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-md-9">
           <div class="card">
             <div class="card-header">
-              <h4>Edit post</h4>
+              <h4>Edit Profile</h4>
             </div>
             <div class="card-body">
               <form>
                 <div class="form-group">
-                  <label for="title">Title</label>
-                  <input type="text" class="form-control" value="Post title">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" value="Name">
                 </div>
                 <div class="form-group">
-                  <label for="title">Category</label>
-                  <select class="form-control" value="Post title">
-                    <option value="">Web Development</option>
-                    <option value="">TechGadgets</option>
-                    <option value="">Business</option>
-                    <option value="">Wellness</option>
-                  </select>
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" value="Email">
                 </div>
                 <div class="form-group">
-                  <label for="file">File Upload</label>
-                  <input type="file" class="form-control-file">
-                  <small class="form-text text-muted">Max size: 3mb</small>
-                </div>
-                <div class="form-group">
-                  <label for="body">Body</label>
+                  <label for="bio">Bio</label>
                   <textarea name="editor1" class="form-control">Lorem300 ipsum dolor sit amet, consectetur adipisicing elit. Sequi commodi cum animi quam nihil dolorem earum, cumque et dolores, quas odio, nobis velit alias! Distinctio ratione, eius! Quod in exercitationem itaque nihil odit voluptatum eaque temporibus ducimus nemo, distinctio ut culpa fuga pariatur est recusandae eum, magni excepturi esse consequatur. ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eveniet debitis nemo, voluptatum blanditiis quas. Recusandae quidem quasi earum aspernatur.
                   </textarea>
                 </div>
               </form>
             </div>
           </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Your avatar</h3>
+          <img src="img/avatar-m.png" alt="" class="d-block img-fluid mb-3">
+          <button class="btn btn-primary btn-block">Edit Image</button>
+          <button class="btn btn-danger btn-block">Delete Image</button>
         </div>
       </div>
     </div>
@@ -144,7 +140,33 @@
     </div>
   </footer>
 
-
+  <!-- PASSWORD MODAL -->
+  <div class="modal fade" id="changePwModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Change Password</h5>
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Password</label>
+              <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="name">Confirm Password</label>
+              <input type="password" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary" data-dismiss="modal">Update Password</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
