@@ -22,7 +22,7 @@
             <a href="index.html" class="nav-link">Dashboard</a>
           </li>
           <li class="nav-item px-2">
-            <a href="posts.html" class="nav-link active">Posts</a>
+            <a href="posts.html" class="nav-link">Posts</a>
           </li>
           <li class="nav-item px-2">
             <a href="categories.html" class="nav-link">Categories</a>
@@ -59,7 +59,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1><i class="fa fa-pencil"></i> Dashboard</h1>
+          <h1><i class="fa fa-gear"></i> Settings</h1>
         </div>
         <div class="col-md-6"></div>
       </div>
@@ -70,92 +70,59 @@
   <section id="action" class="py-4 mb-4 bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 ml-auto">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-btn">
-              <button class="btn btn-primary">Search</button>
-            </span>
-          </div>
+        <div class="col-md-3 mr-auto">
+          <a href="index.html" class="btn btn-light btn-block">
+            <i class="fa fa-arrow-left"></i> Back to Dashboard
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-success btn-block">
+            <i class="fa fa-check"></i> Save  changes
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- POSTS -->
-  <section id="posts">
+  <!-- SETTINGS -->
+  <section id="settings">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="card">
             <div class="card-header">
-              <h4>Latest Posts</h4>
+              <h4>Edit Settings</h4>
             </div>
-            <table class="table table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th>#</th>
-                  <th>Title</th>
-                  <th>Category</th>
-                  <th>Date Posted</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td scope="row">1</td>
-                  <td>Post One</td>
-                  <td>Web Development</td>
-                  <td>12/07/2017</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fa fa-angle-double-right"></i> Details
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">2</td>
-                  <td>Post Two</td>
-                  <td>Tech Gadgets</td>
-                  <td>12/07/2017</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fa fa-angle-double-right"></i> Details
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">3</td>
-                  <td>Post Three</td>
-                  <td>Business</td>
-                  <td>12/07/2017</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fa fa-angle-double-right"></i> Details
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">4</td>
-                  <td>Post One</td>
-                  <td>Wellness</td>
-                  <td>12/07/2017</td>
-                  <td>
-                    <a href="details.html" class="btn btn-secondary">
-                      <i class="fa fa-angle-double-right"></i> Details
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <nav class="ml-4">
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
-                <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                <li class="page-item"><a href="#" class="page-link">Next</a></li>
-              </ul>
-            </nav>
+            <div class="card-body">
+              <form>
+                <fieldset class="form-group">
+                  <legend>Allow User Registration</legend>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" name="userReg" class="form-check-input" value="yes" checked> Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" name="userReg" class="form-check-input" value="no"> No
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="form-group">
+                  <legend>Homepage Format</legend>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" name="pageType" class="form-check-input" value="posts" checked> Post Index
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" name="pageType" class="form-check-input" value="page"> Single Page
+                    </label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -174,6 +141,8 @@
       </div>
     </div>
   </footer>
+
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
