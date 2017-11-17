@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin area</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Blog</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapseButton">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapseButton">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="posts.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="categories.html" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-user-o"></i> Welcome John Doe
+            </a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item text-center">
+                <i class="fa fa-user-circle"></i> Profile
+              </a>
+              <a href="settings.html" class="dropdown-item text-center">
+                <i class="fa fa-gear"></i> Settings
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fa fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="main-header" class="py-2 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1> Post title</h1>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ACTIONS -->
+  <section id="action" class="py-4 mb-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mr-auto">
+          <a href="index.html" class="btn btn-light btn-block">
+            <i class="fa fa-arrow-left"></i> Back to Dashboard
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-success btn-block">
+            <i class="fa fa-check"></i> Save  changes
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="index.html" class="btn btn-danger btn-block">
+            <i class="fa fa-remove"></i> Delete post
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTS -->
+  <section id="posts">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h4>Edit post</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" value="Post title">
+                </div>
+                <div class="form-group">
+                  <label for="title">Category</label>
+                  <select class="form-control" value="Post title">
+                    <option value="">Web Development</option>
+                    <option value="">TechGadgets</option>
+                    <option value="">Business</option>
+                    <option value="">Wellness</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="file">File Upload</label>
+                  <input type="file" class="form-control-file">
+                  <small class="form-text text-muted">Max size: 3mb</small>
+                </div>
+                <div class="form-group">
+                  <label for="body">Body</label>
+                  <textarea name="editor1" class="form-control">Lorem300 ipsum dolor sit amet, consectetur adipisicing elit. Sequi commodi cum animi quam nihil dolorem earum, cumque et dolores, quas odio, nobis velit alias! Distinctio ratione, eius! Quod in exercitationem itaque nihil odit voluptatum eaque temporibus ducimus nemo, distinctio ut culpa fuga pariatur est recusandae eum, magni excepturi esse consequatur. ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eveniet debitis nemo, voluptatum blanditiis quas. Recusandae quidem quasi earum aspernatur.
+                  </textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="bg-dark text-white mt-3 p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">
+            Copyright &copy; 2017 Blog.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace( 'editor1' );
+  </script>
+</body>
+</html>
