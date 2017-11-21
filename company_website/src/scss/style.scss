@@ -92,6 +92,28 @@ body{
 }
 
 #main-footer{
+  font-family: 'Lato', sans-serif;
   background:#0d0d0d;
   color:#d9d9d9;
+}
+
+#page-header{
+  height: 200px;
+  background:url('../img/carousel-1.jpg');
+  background-position: 0 -485px;
+  background-attachment: fixed;
+  background-size: cover;
+  color:#fff;
+  border-bottom:1px #eee solid;
+  padding-top:50px;
+}
+
+#about{
+  font-family: 'Lato', sans-serif;
+  line-height: 25px;
+
+  .align-middle-css{
+    vertical-align: middle;
+    display: inline-block;
+  }
 }
