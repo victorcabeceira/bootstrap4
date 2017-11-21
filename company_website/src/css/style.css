@@ -47,6 +47,7 @@ body {
   min-height: 200px;
   background: url("../img/home-heading.jpeg");
   background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   color: #fff; }
@@ -65,6 +66,7 @@ body {
   min-height: 200px;
   background: url("../img/media.jpeg");
   background-position: 1100px 500px;
+  background-size: cover;
   text-align: center;
   color: #fff; }
   #video-play a {
@@ -73,7 +75,8 @@ body {
 #main-footer {
   font-family: 'Lato', sans-serif;
   background: #0d0d0d;
-  color: #d9d9d9; }
+  color: #d9d9d9;
+  background-size: cover; }
 
 #page-header {
   height: 200px;
