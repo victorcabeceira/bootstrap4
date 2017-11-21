@@ -117,3 +117,21 @@ body{
     display: inline-block;
   }
 }
+
+#faq{
+  .card{
+    border:#444;
+    a{
+      color:#fff;
+      text-decoration: none;
+    }
+  }
+
+  .card-header{
+    background:#262626;
+  }
+
+  .card-body{
+    background:#333333;
+  }
+}

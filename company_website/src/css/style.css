@@ -91,3 +91,15 @@ body {
   #about .align-middle-css {
     vertical-align: middle;
     display: inline-block; }
+
+#faq .card {
+  border: #444; }
+  #faq .card a {
+    color: #fff;
+    text-decoration: none; }
+
+#faq .card-header {
+  background: #262626; }
+
+#faq .card-body {
+  background: #333333; }
