@@ -7,8 +7,9 @@
   <title>Company theme</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -136,6 +137,7 @@
     </div>
   </section>
 
+  <!-- MODAL VIDEO SECTION -->
   <section id="video-play">
     <div class="dark-overlay">
       <div class="row">
@@ -157,6 +159,50 @@
     </div>
   </section>
 
+  <!-- PHOTO GALLERY -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">
+        Photo Gallery
+      </h1>
+      <p class="text-center">Check out our photos</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/7" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/7" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/10" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/10" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/9" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/9" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/4" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/4" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/5" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/5" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://lorempixel.com/560/560/business/6" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="http://lorempixel.com/400/400/business/6" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- VIDEO MODAL -->
   <div class="modal fade" id="videoModal">
     <div class="modal-dialog">
@@ -172,6 +218,7 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
   <script src="js/main.js"></script>
   <script><script>
     $('.carousel').carousel({
