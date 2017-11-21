@@ -1,0 +1,93 @@
+body {
+  overflow-x: hidden; }
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1em !important;
+  padding-right: 1em !important; }
+
+.navbar .nav-link:hover {
+  border-right: #FF6F3C 1px solid;
+  transition: border-color 1s ease; }
+
+.navbar .nav-item.active {
+  position: relative; }
+
+.navbar .nav-item.active:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+  border-bottom: #FF9A3C 2px solid; }
+
+.carousel-item {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 450px; }
+
+.carousel-image-1 {
+  background: url("../img/carousel-1.jpg");
+  background-size: cover; }
+
+.carousel-image-2 {
+  background: url("../img/carousel-2.jpeg");
+  background-size: cover; }
+
+.carousel-image-3 {
+  background: url("../img/carousel-3.jpeg");
+  background-size: cover; }
+
+#home-icons {
+  font-family: 'Lato', sans-serif; }
+
+#home-heading {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  min-height: 200px;
+  background: url("../img/home-heading.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff; }
+
+.dark-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#video-play {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  min-height: 200px;
+  background: url("../img/media.jpeg");
+  background-position: 1100px 500px;
+  text-align: center;
+  color: #fff; }
+  #video-play a {
+    color: #fff; }
+
+#main-footer {
+  font-family: 'Lato', sans-serif;
+  background: #0d0d0d;
+  color: #d9d9d9; }
+
+#page-header {
+  height: 200px;
+  background: url("../img/carousel-1.jpg");
+  background-position: 0 -485px;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px; }
+
+#about {
+  font-family: 'Lato', sans-serif;
+  line-height: 25px; }
+  #about .align-middle-css {
+    vertical-align: middle;
+    display: inline-block; }
