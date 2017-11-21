@@ -1,6 +1,21 @@
 body {
   overflow-x: hidden; }
 
+@media screen and (max-width: 767px) {
+  .navbar .nav-item.active {
+    border-left: #FF9A3C 1px solid; } }
+
+@media screen and (min-width: 768px) {
+  .navbar .nav-item.active {
+    position: relative; }
+  .navbar .nav-item.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    width: 50%;
+    border-bottom: #FF9A3C 2px solid; } }
+
 .navbar .nav-link {
   font-size: 14px;
   text-transform: uppercase;
@@ -8,19 +23,8 @@ body {
   padding-right: 1em !important; }
 
 .navbar .nav-link:hover {
-  border-right: #FF6F3C 1px solid;
+  border-left: #FF6F3C 1px solid;
   transition: border-color 1s ease; }
-
-.navbar .nav-item.active {
-  position: relative; }
-
-.navbar .nav-item.active:after {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  left: 25%;
-  width: 50%;
-  border-bottom: #FF9A3C 2px solid; }
 
 .carousel-item {
   font-family: 'Roboto Condensed', sans-serif;
