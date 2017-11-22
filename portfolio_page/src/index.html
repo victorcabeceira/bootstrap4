@@ -4,14 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bootstrap 4 Starter Pack</title>
+  <title>Portfolio Page</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Bootstrap 4 Starter Pack</h1>
-  <p>Version 4.0.0-beta.2</p>
+  <div id="mainBlock" class="container">
+    <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-md-5 col-xs-6">
+          <img src="img/photo.jpg" alt="Me">
+        </div>
+        <div class="col-lg-8 col-md-7 col-xs-6">
+          <div class="d-flex flex-column">
+            <div class="p-5 bg-dark text-white">
+              <h1 class="display-4 p-3 text-center">Victor Fellipe</h1>
+              <div class="info d-flex flex-row justify-content-around align-items-center">
+                  <div class="profile-info text-center">
+                    <a href="https://twitter.com/">
+                      <i class="fa fa-twitter text-white"></i>
+                    </a>
+                  </div>
+                  <div class="profile-info text-center">
+                    <a href="https://facebook.com/">
+                      <i class="fa fa-facebook text-white"></i>
+                    </a>
+                  </div>
+                  <div class="profile-info text-center">
+                    <a href="https://www.linkedin.com/in/victor-fellipe/">
+                      <i class="fa fa-linkedin text-white"></i>
+                    </a>
+                  </div>
+                  <div class="profile-info text-center">
+                    <a href="https://github.com/victorcabeceira">
+                      <i class="fa fa-github text-white"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+            <div class="p-4 bg-black">
+              Junior Full Stack Web Developer
+            </div>
+
+            <div>
+              <div class="d-flex flex-row text-white align-items-stretch text-center">
+                <div class="port-item p-2 bg-primary" data-toggle="collapse" data-target="#home">
+                  <i class="fa fa-home d-block"></i> Home
+                </div>
+                <div class="port-item p-2 bg-success" data-toggle="collapse" data-target="#resume">
+                  <i class="fa fa-graduation-cap d-block"></i> Resume
+                </div>
+                <div class="port-item p-2 bg-warning" data-toggle="collapse" data-target="#work">
+                  <i class="fa fa-folder-open d-block"></i> Work
+                </div>
+                <div class="port-item p-2 bg-danger" data-toggle="collapse" data-target="#contact">
+                  <i class="fa fa-envelope d-block"></i> Contact
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <div id="home" class="collapse show">
+      <div class="card card-body bg-primary text-white py-5">
+        <h2>Welcome to my page!</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, officiis!</p>
+      </div>
+      <div class="card card-body py-5">
+        <h3>My Skills</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus amet fugit, mollitia, nisi consequatur rem!</p>
+        <hr>
+        <h4>HTML</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-primary" style="width:90%"></div>
+        </div>
+        <h4>CSS</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-primary" style="width:90%"></div>
+        </div>
+        <h4>JavaScript</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-warning" style="width:50%"></div>
+        </div>
+        <h4>PHP</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-danger" style="width:10%"></div>
+        </div>
+        <h4>Python</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar-striped bg-success" style="width:70%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#" class="btn btn-outline-light">
+            <i class="fa fa-cloud"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
